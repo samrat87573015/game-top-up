@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full">
+  <div class="w-full mt-0">
     <div class="relative container">
       <!-- Swiper container -->
       <swiper
@@ -14,7 +14,7 @@
         
       >
         <swiper-slide v-for="(slide, index) in slides" :key="index">
-          <div class="relative h-64 md:h-80 bg-gray-100 overflow-hidden">
+          <div class="relative  h-36 sm:h-40 md:h-52 lg:h-64 bg-gray-100 overflow-hidden">
             <img 
               :src="slide.image" 
               :alt="slide.title"
@@ -25,14 +25,14 @@
       </swiper>
       
       <!-- Custom navigation buttons -->
-      <div class="hidden md:block">
+      <!-- <div class="hidden md:block">
         <button class="swiper-button-prev-custom absolute top-1/2 left-4 -translate-y-1/2 dark-theme  text-white p-3 rounded-full shadow-md z-10 transition-all cursor-pointer">
           <LucideChevronLeft class="w-5 h-5" />
         </button>
         <button class="swiper-button-next-custom absolute top-1/2 right-4 -translate-y-1/2 dark-theme  text-white p-3 rounded-full shadow-md z-10 transition-all cursor-pointer">
           <LucideChevronRight class="w-5 h-5" />
         </button>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -58,28 +58,14 @@ const slides = ref([
   {
     title: 'Mountain Retreat',
     description: 'Explore the serene beauty of mountain landscapes',
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
+    image: 'https://jubaly.com/wp-content/uploads/2024/05/%E0%A6%A8%E0%A6%BF%E0%A6%9C%E0%A7%87%E0%A6%B0-%E0%A6%AC%E0%A7%87%E0%A6%A1-%E0%A6%B0%E0%A7%81%E0%A6%AE%E0%A6%95%E0%A7%87-%E0%A6%97%E0%A7%87%E0%A6%AE%E0%A6%BF%E0%A6%82-%E0%A6%B0%E0%A7%81%E0%A6%AE%E0%A7%87-%E0%A6%B0%E0%A7%82%E0%A6%AA%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A6%B0%E0%A6%BF%E0%A6%A4-%E0%A6%95%E0%A6%B0%E0%A6%A4%E0%A7%87.webp'
   },
   {
     title: 'Coastal Getaway',
     description: 'Relax by the ocean with stunning coastal views',
-    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
+    image: 'https://jubaly.com/wp-content/uploads/2023/03/jubaly-banner-ew.webp'
   },
-  {
-    title: 'Urban Adventure',
-    description: 'Discover the excitement of city exploration',
-    image: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
-  },
-  {
-    title: 'Forest Escape',
-    description: 'Find peace among ancient trees and lush greenery',
-    image: 'https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
-  },
-  {
-    title: 'Desert Solitude',
-    description: 'Experience the stark beauty of desert landscapes',
-    image: 'https://images.unsplash.com/photo-1509316785289-025f5b846b35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
-  }
+  
 ]);
 
 onMounted(() => {

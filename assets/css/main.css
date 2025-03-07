@@ -1,31 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
 
 @import "tailwindcss";
 
 :root{
-  --bg-primary: #0a0d12;
-  --theme-color: #ff4800;
+  --bg-primary: #0f0f1a;
+  --bg-theme-color: #111120;
+  --theme-color: #452f9e;
+  --theme-color2: #261569;
 }
 
 body{
-  font-family: "Play", sans-serif;
+  font-family: "Oxanium", sans-serif;
   font-weight: 400;
   font-style: normal;
   background-color: var(--bg-primary);
   color: #fff;
 }
 
-.dark-theme{
-  background-color: var(--bg-primary);
-}
+
 .container{
   @apply mx-auto px-4;
 }
 
+
+
+
+/* color palette */
+
+.dark-theme{
+  background-color: var(--bg-primary);
+}
+
+.theme-bg{
+  background: var(--bg-theme-color);
+}
+.theme-border{
+  border: 1px solid var(--theme-color);
+}
 .theme-color{
   color: var(--theme-color);
 }
 
-.theme-bg{
-  background-color: var(--theme-color);
+.primary-bg{
+  background: var(--theme-color);
+}
+
+span.swiper-pagination-bullet {
+  background: var(--theme-color);
+}
+
+.primary_btn{
+  @apply px-6 py-2 rounded-lg cursor-pointer transition-all;
+  background: var(--theme-color);
+  color: #fff;
+}
+.primary_btn:hover{
+  background: var(--theme-color2);
+}
+
+.section_title{
+  @apply text-3xl font-bold;
 }

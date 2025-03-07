@@ -1,5 +1,5 @@
 <template>
-  <header class="header_area bg-black">
+  <header class="header_area dark-theme shadow-lg">
     <!-- Top section with logo and menu -->
     <div class="container mx-auto px-4 py-4">
       <div class="flex justify-between items-center">
@@ -19,35 +19,32 @@
           <NuxtLink to="/" class="nav-link">Contact</NuxtLink>
         </nav>
 
-        <!-- Mobile Menu Button -->
-        <div class="md:hidden">
-          <button @click="toggleMenu" class="text-gray-700 focus:outline-none">
-            <LucideAlignJustify />
-          </button>
+        <div class="login_area flex items-center space-x-4">
+          <NuxtLink to="/login" class="flex items-center space-x-2">
+            <div class="account_icon w-8 h-8 overflow-hidden flex items-center justify-center rounded-full bg-gray-200">
+              <img src="/assets/images/icon/account.png" alt="" class="w-full h-full object-cover" />
+            </div>
+            <span class="text-white font-semibold hidden lg:block">Login/Register</span>
+          </NuxtLink>
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden">
+            <button @click="toggleMenu" class="text-gray-700 focus:outline-none">
+              <LucideAlignJustify />
+            </button>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Mobile Menu Overlay (Fade effect) -->
     <transition name="fade">
-      <div
-        v-if="isMenuOpen"
-        class="fixed inset-0 bg-black opacity-[0.5] z-50"
-        @click="toggleMenu"
-      ></div>
+      <div v-if="isMenuOpen" class="fixed inset-0 bg-black opacity-[0.5] z-50" @click="toggleMenu"></div>
     </transition>
 
     <!-- Mobile Menu (Slide-in effect) -->
     <transition name="slide">
-      <div
-        v-if="isMenuOpen"
-        class="fixed top-0 left-0 w-64 h-full bg-[#02102B] shadow-lg p-6 z-50"
-        @click.stop
-      >
-        <button
-          @click="toggleMenu"
-          class="absolute top-4 right-4 text-gray-600"
-        >
+      <div v-if="isMenuOpen" class="fixed top-0 left-0 w-64 h-full bg-[#02102B] shadow-lg p-6 z-50" @click.stop>
+        <button @click="toggleMenu" class="absolute top-4 right-4 text-gray-600">
           <LucideX />
         </button>
         <div class="flex flex-col space-y-3 mt-8">
@@ -61,16 +58,12 @@
     </transition>
 
     <!-- Search Bar -->
-    <div class="border-t border-gray-200">
-      <div class="container mx-auto px-4 py-3">
+    <div class="border-t border-[#333333]">
+      <div class="container mx-auto px-6 py-3">
         <div class="relative">
-          <input
-            type="text"
-            placeholder="Search for products, services, and more..."
-            class="w-full dark-theme pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-200"
-            v-model="searchQuery"
-            @keyup.enter="handleSearch"
-          />
+          <input type="text" placeholder="Search for products, services, and more..."
+            class="w-full bg-[#161623] theme-border pl-12 pr-4 py-3  rounded-lg focus:outline-none focus:ring-2 focus:ring-transparent"
+            v-model="searchQuery" @keyup.enter="handleSearch" />
           <div class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400">
             <LucideSearch />
           </div>
@@ -91,7 +84,7 @@ const toggleMenu = () => {
 };
 </script>
 
-<style>
+<style scoped>
 /* Slide-in transition for menu */
 .slide-enter-active,
 .slide-leave-active {
