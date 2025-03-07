@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+@import "tailwindcss";
+
+:root{
+  --bg-primary: #02102B;
+  --bg-primary-hover: #421901;
+}
+
+body{
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--bg-primary);
+  color: #fff;
+}
+
+.dark-theme{
+  background-color: var(--bg-primary);
+}
