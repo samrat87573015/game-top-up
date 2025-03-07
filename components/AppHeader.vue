@@ -1,5 +1,5 @@
 <template>
-  <header class="header_area">
+  <header class="header_area bg-black">
     <!-- Top section with logo and menu -->
     <div class="container mx-auto px-4 py-4">
       <div class="flex justify-between items-center">
@@ -67,7 +67,7 @@
           <input
             type="text"
             placeholder="Search for products, services, and more..."
-            class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-200"
+            class="w-full dark-theme pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-200"
             v-model="searchQuery"
             @keyup.enter="handleSearch"
           />

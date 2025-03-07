@@ -1,6 +1,6 @@
 <template>
   <div class="w-full">
-    <div class="relative">
+    <div class="relative container">
       <!-- Swiper container -->
       <swiper
         :modules="[SwiperNavigation, SwiperPagination, SwiperAutoplay]"

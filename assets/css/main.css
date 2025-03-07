@@ -3,8 +3,8 @@
 @import "tailwindcss";
 
 :root{
-  --bg-primary: #02102B;
-  --bg-primary-hover: #421901;
+  --bg-primary: #0a0d12;
+  --theme-color: #ff4800;
 }
 
 body{
@@ -17,4 +17,15 @@ body{
 
 .dark-theme{
   background-color: var(--bg-primary);
+}
+.container{
+  @apply mx-auto px-4;
+}
+
+.theme-color{
+  color: var(--theme-color);
+}
+
+.theme-bg{
+  background-color: var(--theme-color);
 }
