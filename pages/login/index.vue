@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-md w-full space-y-8 theme-bg p-8 rounded-lg shadow-md">
+    <div class="max-w-md w-full space-y-8 theme-bg p-4 sm:p-8 rounded-lg shadow-md">
       <div>
         <h2 class="mt-6 text-center text-3xl font-extrabold ">
           Sign in to your account
@@ -65,7 +65,7 @@
             <p v-if="errors.password" class="mt-2 text-sm text-red-600">{{ errors.password }}</p>
           </div>
 
-          <div class="flex items-center justify-between">
+          <div class="flex flex-col sm:flex-row gap-2 sm:gap-0 sm:items-center justify-between">
             <div class="flex items-center">
               <input
                 id="remember-me"
