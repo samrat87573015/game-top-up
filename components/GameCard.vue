@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink to="/games/fds" class="game_card_item glow-effect rounded-lg overflow-hidden theme-bg shadow-lg">
+  <NuxtLink to="/games/fds" class="game_card_item glow-effect rounded-lg overflow-hidden bg-themebg shadow-lg">
     <div class="card_image w-full h-[90px] sm:h-[130px] md:h-[150px] xl:h-[190px] rounded-lg overflow-hidden">
       <img src="/assets/images/game/coc.png" alt="game_imaeg" class="w-full h-full object-cover" />
     </div>

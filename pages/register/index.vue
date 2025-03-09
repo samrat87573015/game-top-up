@@ -1,13 +1,13 @@
 <template>
   <div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-md w-full space-y-8 p-4 sm:p-8 theme-bg rounded-lg shadow-md">
+    <div class="max-w-md w-full space-y-8 p-4 sm:p-8 bg-themebg rounded-lg shadow-md">
       <div>
         <h2 class="mt-6 text-center text-3xl font-extrabold">
           Create your account
         </h2>
         <p class="mt-2 text-center text-sm ">
           Already have an account?
-          <NuxtLink to="/login" class="font-medium theme-color">
+          <NuxtLink to="/login" class="font-medium text-theme">
             Sign in
           </NuxtLink>
         </p>
@@ -24,8 +24,8 @@
                 name="name"
                 type="text"
                 autocomplete="name"
-                class="appearance-none block w-full px-3 py-2 border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                :class="{ 'border-red-300': errors.name, 'border-gray-300': !errors.name }"
+                class="appearance-none block w-full px-3 py-2 border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-theme focus:border-theme sm:text-sm"
+                :class="{ 'border-red-500': errors.name, 'border-gray-300': !errors.name }"
                 placeholder="John Doe"
                 @blur="validateField('name')"
               />
@@ -46,8 +46,8 @@
                 name="email"
                 type="email"
                 autocomplete="email"
-                class="appearance-none block w-full px-3 py-2 border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                :class="{ 'border-red-300': errors.email, 'border-gray-300': !errors.email }"
+                class="appearance-none block w-full px-3 py-2 border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-theme focus:border-theme sm:text-sm"
+                :class="{ 'border-red-500': errors.email, 'border-gray-300': !errors.email }"
                 placeholder="you@example.com"
                 @blur="validateField('email')"
               />
@@ -68,8 +68,8 @@
                 name="password"
                 :type="showPassword ? 'text' : 'password'"
                 autocomplete="new-password"
-                class="appearance-none block w-full px-3 py-2 border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                :class="{ 'border-red-300': errors.password, 'border-gray-300': !errors.password }"
+                class="appearance-none block w-full px-3 py-2 border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-theme focus:border-theme sm:text-sm"
+                :class="{ 'border-red-500': errors.password, 'border-gray-300': !errors.password }"
                 placeholder="••••••••"
                 @blur="validateField('password')"
               />
@@ -97,8 +97,8 @@
                 name="confirmPassword"
                 :type="showConfirmPassword ? 'text' : 'password'"
                 autocomplete="new-password"
-                class="appearance-none block w-full px-3 py-2 border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                :class="{ 'border-red-300': errors.confirmPassword, 'border-gray-300': !errors.confirmPassword }"
+                class="appearance-none block w-full px-3 py-2 border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-theme focus:border-theme sm:text-sm"
+                :class="{ 'border-red-500': errors.confirmPassword, 'border-gray-300': !errors.confirmPassword }"
                 placeholder="••••••••"
                 @blur="validateField('confirmPassword')"
               />

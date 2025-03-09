@@ -1,5 +1,5 @@
 <template>
-  <header class="header_area dark-theme shadow-lg">
+  <header class="header_area bg-bodybg shadow-lg">
     <!-- Top section with logo and menu -->
     <div class="container mx-auto px-4 py-4">
       <div class="flex justify-between items-center">
@@ -62,7 +62,7 @@
       <div class="container mx-auto px-6 py-3">
         <div class="relative">
           <input type="text" placeholder="Search for products, services, and more..."
-            class="w-full bg-[#161623] theme-border pl-12 pr-4 py-3  rounded-lg focus:outline-none focus:ring-2 focus:ring-transparent"
+            class="w-full bg-themebg border border-theme pl-12 pr-4 py-3  rounded-lg focus:outline-none focus:ring-2 focus:ring-transparent"
             v-model="searchQuery" @keyup.enter="handleSearch" />
           <div class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400">
             <LucideSearch />

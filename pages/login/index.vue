@@ -1,13 +1,13 @@
 <template>
   <div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-md w-full space-y-8 theme-bg p-4 sm:p-8 rounded-lg shadow-md">
+    <div class="max-w-md w-full space-y-8 bg-themebg p-4 sm:p-8 rounded-lg shadow-md">
       <div>
         <h2 class="mt-6 text-center text-3xl font-extrabold ">
           Sign in to your account
         </h2>
         <p class="mt-2 text-center text-sm ">
           Don't have an account?
-          <NuxtLink to="/register" class="font-medium theme-color">
+          <NuxtLink to="/register" class="font-medium text-theme">
             Register
           </NuxtLink>
         </p>
@@ -24,8 +24,8 @@
                 name="email"
                 type="email"
                 autocomplete="email"
-                class="appearance-none block w-full px-3 py-2 border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                :class="{ 'border-red-300': errors.email, 'border-gray-300': !errors.email }"
+                class="appearance-none block w-full px-3 py-2 border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-theme focus:border-theme sm:text-sm"
+                :class="{ 'border-red-500': errors.email, 'border-gray-300': !errors.email }"
                 placeholder="you@example.com"
                 @blur="validateField('email')"
               />
@@ -46,8 +46,8 @@
                 name="password"
                 :type="showPassword ? 'text' : 'password'"
                 autocomplete="current-password"
-                class="appearance-none block w-full px-3 py-2 border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                :class="{ 'border-red-300': errors.password, 'border-gray-300': !errors.password }"
+                class="appearance-none block w-full px-3 py-2 border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-theme focus:border-theme sm:text-sm"
+                :class="{ 'border-red-500': errors.password, 'border-gray-300': !errors.password }"
                 placeholder="••••••••"
                 @blur="validateField('password')"
               />
@@ -80,7 +80,7 @@
             </div>
 
             <div class="text-sm">
-              <NuxtLink to="/" class="font-medium theme-color">
+              <NuxtLink to="/" class="font-medium text-theme">
                 Forgot your password?
               </NuxtLink>
             </div>

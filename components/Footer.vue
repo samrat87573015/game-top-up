@@ -1,5 +1,5 @@
 <template>
-  <footer class="theme-bg text-white">
+  <footer class="bg-themebg text-white">
     <div class="container mx-auto px-4 py-12">
       <!-- Desktop: 3 columns, Mobile: Stack -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">

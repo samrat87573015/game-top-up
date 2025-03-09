@@ -1,6 +1,6 @@
 <!-- layouts/default.vue -->
 <template>
-  <div class="default-layout">
+  <div class="default-layout font-oxanium">
     <AppHeader />
     <main>
       <slot />
