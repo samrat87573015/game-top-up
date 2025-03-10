@@ -5,8 +5,7 @@
       <div class="w-full md:w-2/5">
         <!-- Banner Section -->
         <div class="relative">
-          <img src="/assets/images/game/coc.png" alt="Weekly Diamond Pass Banner"
-            class="w-full h-[250px] sm:h-[350px] object-cover object-top" />
+          <NuxtImg src="/assets/images/game/coc.png" height="400px" width="600px" format="webp" />
           <div class="absolute inset-0 bg-gradient-to-b from-transparent to-purple-950/80"></div>
         </div>
 

@@ -14,12 +14,8 @@
         
       >
         <swiper-slide v-for="(slide, index) in slides" :key="index">
-          <div class="relative  h-36 sm:h-40 md:h-52 lg:h-64 bg-gray-100 overflow-hidden">
-            <img 
-              :src="slide.image" 
-              :alt="slide.title"
-              class="w-full h-full object-cover transition-transform duration-500"
-            />
+          <div class="relative  bg-gray-100 overflow-hidden">
+            <NuxtImg :src="slide.image" width="1504" height="250" />
           </div>
         </swiper-slide>
       </swiper>
